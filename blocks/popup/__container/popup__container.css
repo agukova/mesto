@@ -1,0 +1,17 @@
+.popup__container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 27%;
+    left: 50%;
+    max-width: 33.6%;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    transform: translate(-50%, -50%);
+  }
+
+  @media (max-width: 768px) {
+    .popup__container {
+      max-width: 100%;
+      }
+  }

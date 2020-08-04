@@ -1,0 +1,6 @@
+.element__caption-field {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    }

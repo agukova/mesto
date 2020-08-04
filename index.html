@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Место</title>
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
+  <body>
+    <div class="page">
+
+      <!-- POPUP -->
+      <section class="popup">
+        <div class="popup__container">
+          <h3 class="popup__title">Редактировать профиль</h3>
+          <form class="popup__form">
+            <input class="popup__input popup__name" type="text">
+            <input class="popup__input popup__occupation" type="text">
+            <button class="popup__submit" type="submit">Сохранить</button>
+            <input type="button" class="popup__close" onclick="popupClose()">
+          </form>
+        </div>
+      </section>
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__logo"></div>
+        <hr class="header__line"></hr>
+      </header>
+
+      <main class="content">
+          <!--  PROFILE -->
+          <section class="profile">
+              <img class="profile__avatar" src="./images/profile/profile__avatar.jpg">
+              <div class="profile__info">
+                  <p class="profile__name">Жак-Ив Кусто</p>
+                  <button class="profile__button-edit">
+                      <img src="./images/button-image/edit button.svg" alt="изменить">
+                  </button>
+                  <p class="profile__occupation">Исследователь океана</p>
+              </div>
+              <button class="profile__button-add">
+                  <img src="./images/button-image/add button.svg" alt="добавить">
+              </button>
+          </section>
+          <!-- ELEMENTS -->
+          <section class="elements">
+            <div class="element">
+              <img class="element__picture" src="./images/elements/arhangelsk.jpg" alt="Архангельская область">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Архангельская область</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+            <div class="element">
+              <img class="element__picture" src="./images/elements/arhyz.jpg" alt="Архыз">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Архыз</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+            <div class="element">
+              <img class="element__picture" src="./images/elements/baikal.jpg" alt="<Байкал>">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Байкал</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+            <div class="element">
+              <img class="element__picture" src="./images/elements/kamchatka.jpg" alt="Камчатка">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Камчатка</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+            <div class="element">
+              <img class="element__picture" src="./images/elements/smolensk.jpg" alt="Смоленск">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Смоленск</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+            <div class="element">
+              <img class="element__picture" src="./images/elements/москва.jpg" alt="Москва">
+              <div class="element__caption-field">
+                <h2 class="element__caption">Москва</h2>
+                <button class="element__like-button">
+                  <img src="./images/button-image/like button.svg" alt="Лайк">
+                </button>
+              </div> 
+            </div>
+          </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__credits">&copy; 2020 Mesto Russia</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
