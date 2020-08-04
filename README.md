@@ -14,6 +14,6 @@
 
 В планах сделать английскую версию сайта
 
-**ССылка**
+**Ссылка**
 
-* [Ссылка на проект в Github](https://agukova.github.io/russian-travel/)
+* [Ссылка на проект в Github](https://agukova.github.io/mesto/index.html)
