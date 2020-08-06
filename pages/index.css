@@ -1,5 +1,6 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/Inter\ Web/inter.css);
+@import url(../blocks/body/body.css);
 @import url(../blocks/page/page.css);
 @import url(../blocks/header/header.css);
 @import url(../blocks/profile/profile.css);
@@ -7,9 +8,4 @@
 @import url(../blocks/element/element.css);
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
-
-
-body {
-  background-color: #000000;
-}
 

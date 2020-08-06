@@ -2,10 +2,3 @@
 @import url(./__caption-field.css/element__caption-field.css);
 @import url(./__caption/element__caption.css);
 @import url(./__like-button/element__like-button.css);
-
-.element {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-  }

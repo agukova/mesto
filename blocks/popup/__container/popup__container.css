@@ -12,6 +12,8 @@
 
   @media (max-width: 768px) {
     .popup__container {
-      max-width: 100%;
+      min-width: 75%;
+      transform: (-55%, -50%);
+      top: 20%;
       }
   }

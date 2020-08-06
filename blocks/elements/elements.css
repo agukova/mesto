@@ -1,3 +1,5 @@
+@import url(./__element/elements__element.css);
+
 .elements {
     max-width: 69%;
     margin: 3.8% auto 0;

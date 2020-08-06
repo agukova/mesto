@@ -6,3 +6,11 @@
     color: #000000;
     margin: 8% 0 12.6% 8.4%;
   }
+
+  @media (max-width: 375px) {
+    .popup__title {
+      margin-bottom: 8%;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
