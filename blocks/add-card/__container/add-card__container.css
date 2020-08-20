@@ -1,4 +1,4 @@
-.popup__container {
+.add-card__container {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
   }
 
   @media (max-width: 768px) {
-    .popup__container {
+    .add-card__container {
       min-width: 75%;
       transform: translate(-55%, -50%);
       top: 10%;

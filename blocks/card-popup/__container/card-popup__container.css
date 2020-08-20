@@ -1,0 +1,12 @@
+.card-popup__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+@media(max-width: 920px) {
+    .card-popup__container {
+        margin-top: 20vh;
+    }
+}

@@ -9,7 +9,7 @@
   <body class="body">
     <div class="page">
 
-      <!-- POPUP -->
+      <!-- POPUP PROFILE -->
       <section class="popup">
         <div class="popup__container">
           <h3 class="popup__title">Редактировать профиль</h3>
@@ -21,6 +21,29 @@
           </form>
         </div>
       </section>
+
+      <!-- POPUP ADD CARD -->
+      <section class="add-card">
+        <div class="add-card__container">
+          <h3 class="add-card__title">Новое место</h3>
+          <form class="add-card__form" name="Mesto">
+            <input class="add-card__input add-card__name" type="text" name="MestoName" placeholder="Название">
+            <input class="add-card__input add-card__link" type="text" name="MestoLink" placeholder="Cсылка на картинку">
+            <button class="add-card__submit" type="submit">Создать</button>
+            <input type="button" class="popup__close" onclick="popupClose()" value=" ">
+          </form>
+        </div>
+      </section>
+
+      <!-- POPUP CARD PICTURE -->
+        <section class="card-popup">
+          <div class="card-popup__container">
+            <img class="card-popup__picture">
+            <input type="button" class="card-popup__close" onclick="popupClose()" value=" ">
+            <h2 class="card-popup__name"></h2>
+          </div>
+        </section>
+
       <!-- HEADER -->
       <header class="header">
         <div class="header__logo"></div>
@@ -44,6 +67,7 @@
           </section>
           <!-- ELEMENTS -->
           <section class="elements">
+            <!--
             <div class="elements__element element">
               <img class="element__picture" src="./images/elements/arhangelsk.jpg" alt="Архангельская область">
               <div class="element__caption-field">
@@ -97,13 +121,25 @@
                   <img src="./images/button-image/like-button.svg" alt="Лайк">
                 </button>
               </div> 
-            </div>
+            </div> -->
           </section>
       </main>
       <footer class="footer">
         <p class="footer__credits">&copy; 2020 Mesto Russia</p>
       </footer>
     </div>
+
+    <template id="card-template">
+      <div class="elements__element element">
+        <img class="element__picture">
+        <div class="element__caption-field">
+          <h2 class="element__caption"></h2>
+          <button class="element__like-button" type="button"></button>
+        </div> 
+        <button class="element__delete" type="button"></button>
+      </div>
+    </template>
+
     <script src="index.js"></script>
   </body>
 </html>
