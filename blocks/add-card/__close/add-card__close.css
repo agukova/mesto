@@ -1,0 +1,21 @@
+.add-card__close {
+    border-style: none;
+    position: absolute;
+    min-width: 40px;
+    min-height: 40px;
+    top: -12%;
+    left: 100%;
+    padding: 0;
+    background-color: rgba(0,0,0,0);
+    transition: ease-in 0.2s;
+    background: url(../../../images/button-image/Close-Icon.svg) no-repeat center;
+  }
+
+  .add-card__close:active {
+    outline: none;
+  }
+
+  .add-card__close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+  }

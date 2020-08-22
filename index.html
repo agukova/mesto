@@ -17,7 +17,7 @@
             <input class="popup__input popup__name" type="text" name="ProfileName">
             <input class="popup__input popup__occupation" type="text" name="ProfileJob">
             <button class="popup__submit" type="submit">Сохранить</button>
-            <input type="button" class="popup__close" onclick="popupClose()" value=" ">
+            <button type="button" class="popup__close"></button>
           </form>
         </div>
       </section>
@@ -28,9 +28,9 @@
           <h3 class="add-card__title">Новое место</h3>
           <form class="add-card__form" name="Mesto">
             <input class="add-card__input add-card__name" type="text" name="MestoName" placeholder="Название">
-            <input class="add-card__input add-card__link" type="text" name="MestoLink" placeholder="Cсылка на картинку">
+            <input class="add-card__input add-card__link" type="url" name="MestoLink" placeholder="Cсылка на картинку">
             <button class="add-card__submit" type="submit">Создать</button>
-            <input type="button" class="popup__close" onclick="popupClose()" value=" ">
+            <button type="button" class="add-card__close"></button>
           </form>
         </div>
       </section>
@@ -39,7 +39,7 @@
         <section class="card-popup">
           <div class="card-popup__container">
             <img class="card-popup__picture">
-            <input type="button" class="card-popup__close" onclick="popupClose()" value=" ">
+            <button type="button" class="card-popup__close"></button>
             <h2 class="card-popup__name"></h2>
           </div>
         </section>
@@ -67,61 +67,6 @@
           </section>
           <!-- ELEMENTS -->
           <section class="elements">
-            <!--
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/arhangelsk.jpg" alt="Архангельская область">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Архангельская область</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div>
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/arhyz.jpg" alt="Архыз">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Архыз</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div>
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/baikal.jpg" alt="<Байкал>">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Байкал</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div>
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/kamchatka.jpg" alt="Камчатка">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Камчатка</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div>
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/smolensk.jpg" alt="Смоленск">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Смоленск</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div>
-            <div class="elements__element element">
-              <img class="element__picture" src="./images/elements/москва.jpg" alt="Москва">
-              <div class="element__caption-field">
-                <h2 class="element__caption">Москва</h2>
-                <button class="element__like-button" type="button">
-                  <img src="./images/button-image/like-button.svg" alt="Лайк">
-                </button>
-              </div> 
-            </div> -->
           </section>
       </main>
       <footer class="footer">
