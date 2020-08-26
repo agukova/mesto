@@ -23,14 +23,14 @@
       </section>
 
       <!-- POPUP ADD CARD -->
-      <section class="add-card">
-        <div class="add-card__container">
-          <h3 class="add-card__title">Новое место</h3>
-          <form class="add-card__form" name="Mesto">
-            <input class="add-card__input add-card__name" type="text" name="MestoName" placeholder="Название">
-            <input class="add-card__input add-card__link" type="url" name="MestoLink" placeholder="Cсылка на картинку">
-            <button class="add-card__submit" type="submit">Создать</button>
-            <button type="button" class="add-card__close"></button>
+      <section class="popup popup_add-card">
+        <div class="popup__container">
+          <h3 class="popup__title">Новое место</h3>
+          <form class="popup__form" name="Mesto">
+            <input class="popup__input popup__name_mesto" type="text" name="MestoName" placeholder="Название">
+            <input class="popup__input popup__link" type="url" name="MestoLink" placeholder="Cсылка на картинку">
+            <button class="popup__submit popup__submit_add-card" type="submit">Создать</button>
+            <button type="button" class="popup__close popup__close_add-card"></button>
           </form>
         </div>
       </section>
@@ -66,8 +66,8 @@
               </button>
           </section>
           <!-- ELEMENTS -->
-          <section class="elements">
-          </section>
+          <ul class="elements">
+          </ul>
       </main>
       <footer class="footer">
         <p class="footer__credits">&copy; 2020 Mesto Russia</p>
@@ -75,14 +75,14 @@
     </div>
 
     <template id="card-template">
-      <div class="elements__element element">
+      <li class="elements__element element">
         <img class="element__picture">
         <div class="element__caption-field">
           <h2 class="element__caption"></h2>
           <button class="element__like-button" type="button"></button>
         </div> 
         <button class="element__delete" type="button"></button>
-      </div>
+      </li>
     </template>
 
     <script src="index.js"></script>

@@ -3,7 +3,7 @@ const profileName = document.querySelector('.profile__name');
 const profileOccupation = document.querySelector('.profile__occupation');
 const popupName = document.querySelector('.popup__name')
 const popupOccupation = document.querySelector('.popup__occupation');
-const closedNewMesto = document.querySelector('.add-card');
+const closedNewMesto = document.querySelector('.popup_add-card');
 
 const cardsContainer = document.querySelector('.elements');
 const cardPopupContainer = document.querySelector('.page');
@@ -13,21 +13,27 @@ const cardTemplate = document.querySelector('#card-template').content;
 /* CLOSE FORMS */
 function popupClose() {   
     closedPopup.classList.remove('popup_opened');
-    closedNewMesto.classList.remove('add-card_opened');
+    closedNewMesto.classList.remove('popup_opened');
     document.querySelector('.card-popup').classList.remove('card-popup_opened');
     
 }
+/* OPEN any Popup Form*/
+function popupOpen(classPopup,buttonOpen,){
+    classPopup.classList.add(buttonOpen);
+}
 
-/* OPEN CARD FORM */
+/* OPEN CARD FORM */ 
+
+
 document.querySelector('.profile__button-add').addEventListener('click', function() {
-    closedNewMesto.classList.add('add-card_opened');
-    document.querySelector('.add-card__close').addEventListener('click', popupClose);
-})
+     popupOpen(closedNewMesto,'popup_opened');
+     document.querySelector('.popup__close_add-card').addEventListener('click', popupClose);
+}) 
 
 
 /* OPEN PROFILE FORM */
 document.querySelector('.profile__button-edit').addEventListener('click', function() {
-    closedPopup.classList.add('popup_opened');
+    popupOpen(closedPopup,'popup_opened');
     popupName.value = profileName.textContent;
     popupOccupation.value = profileOccupation.textContent;
     document.querySelector('.popup__close').addEventListener('click', popupClose);
@@ -68,10 +74,10 @@ function addCard(nameValue, linkValue) {
         cardsContainer.prepend(renderCard(nameValue, linkValue));
 }
 
-document.querySelector('.add-card__submit').addEventListener('click', function(evt) {
+document.querySelector('.popup__submit_add-card').addEventListener('click', function(evt) {
     evt.preventDefault();
-    const mestoName = document.querySelector('.add-card__name');
-    const mestoLink = document.querySelector('.add-card__link');
+    const mestoName = document.querySelector('.popup__name_mesto');
+    const mestoLink = document.querySelector('.popup__link');
     addCard(mestoName.value, mestoLink.value);
     popupClose();
 })
@@ -107,7 +113,7 @@ const initialCards = [
 
 initialCards.forEach(function (item) {
     
-    cardsContainer.append(renderCard(item.name,item.link));
+    addCard(item.name,item.link);
 })
 
 
