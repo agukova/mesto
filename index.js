@@ -18,35 +18,35 @@ function popupClose() {
     
 }
 /* OPEN any Popup Form*/
-function popupOpen(classPopup,buttonOpen,){
-    classPopup.classList.add(buttonOpen);
+function popupOpen(classPopup){
+    classPopup.classList.add('popup_opened');
 }
 
 /* OPEN CARD FORM */ 
-
-
 document.querySelector('.profile__button-add').addEventListener('click', function() {
-     popupOpen(closedNewMesto,'popup_opened');
-     document.querySelector('.popup__close_add-card').addEventListener('click', popupClose);
-}) 
+     popupOpen(closedNewMesto);
+}) ;
 
 
 /* OPEN PROFILE FORM */
 document.querySelector('.profile__button-edit').addEventListener('click', function() {
-    popupOpen(closedPopup,'popup_opened');
+    popupOpen(closedPopup);
     popupName.value = profileName.textContent;
     popupOccupation.value = profileOccupation.textContent;
-    document.querySelector('.popup__close').addEventListener('click', popupClose);
 });
 
+/* CLOSING FORMS*/
+document.querySelector('.popup__close_add-card').addEventListener('click', popupClose);
+document.querySelector('.popup__close').addEventListener('click', popupClose);
 
-/* CHANGE PROFILE */
-document.querySelector('.popup__submit').addEventListener('click', function(evt) {
+/* CHANGE PROFILE*/
+
+document.querySelector('.popup__form').onsubmit =  function(evt) {
     evt.preventDefault();
-    profileName.textContent = `${popupName.value}`;
-    profileOccupation.textContent = `${popupOccupation.value}`;
+    profileName.textContent = popupName.value;
+    profileOccupation.textContent = popupOccupation.value;
     popupClose();
-});
+};
 
 /* RENDER CARDS */
 function renderCard (nameValue, linkValue) {
@@ -74,13 +74,13 @@ function addCard(nameValue, linkValue) {
         cardsContainer.prepend(renderCard(nameValue, linkValue));
 }
 
-document.querySelector('.popup__submit_add-card').addEventListener('click', function(evt) {
+document.querySelector('.popup__form_add-card').onsubmit = function(evt) {
     evt.preventDefault();
     const mestoName = document.querySelector('.popup__name_mesto');
     const mestoLink = document.querySelector('.popup__link');
     addCard(mestoName.value, mestoLink.value);
     popupClose();
-})
+}
 
 /* INITIAL CARDS */
 
